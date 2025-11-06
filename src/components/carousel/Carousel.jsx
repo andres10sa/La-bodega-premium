@@ -289,7 +289,7 @@ export const Carousel = ({ addToCart }) => {
           <button
             onClick={prev}
             disabled={jumpActive}
-            className={`absolute left-0 lg:-left-10 z-20 p-4 text-3xl text-[#D4B753] hover:text-white transition-colors duration-300 bg-zinc-950/50 rounded-full shadow-lg 
+            className={`absolute cursor-pointer left-0 lg:-left-10 z-20 p-4 text-3xl text-[#D4B753] hover:text-white transition-colors duration-300 bg-zinc-950/50 rounded-full shadow-lg 
             ${jumpActive ? "opacity-50 cursor-not-allowed" : ""}`}
             aria-label="Anterior"
           >
@@ -313,7 +313,7 @@ export const Carousel = ({ addToCart }) => {
           <button
             onClick={next}
             disabled={jumpActive}
-            className={`absolute right-0 lg:-right-10 z-20 p-4 text-3xl text-[#D4B753] hover:text-white transition-colors duration-300 bg-zinc-950/50 rounded-full shadow-lg
+            className={`absolute cursor-pointer right-0 lg:-right-10 z-20 p-4 text-3xl text-[#D4B753] hover:text-white transition-colors duration-300 bg-zinc-950/50 rounded-full shadow-lg
             ${jumpActive ? "opacity-50 cursor-not-allowed" : ""}`}
             aria-label="Siguiente"
           >
