@@ -1,0 +1,1 @@
+export { Paralax } from "./Paralax";

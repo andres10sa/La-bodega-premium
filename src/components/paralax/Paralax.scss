@@ -1,0 +1,61 @@
+  /* Estilo para Parallax: Fijo y Cubriendo, creando el efecto */
+  .parallax {
+    background-image: url('../../assets/images/paralax.jpg');
+    min-height: 400px; /* Altura del contenedor del Parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; /* Asegura que el contenido esté dentro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Overlay para mejorar legibilidad del texto en la imagen */
+.parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Oscurece el 40% */
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: #25D366; /* Color de WhatsApp */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    z-index: 50; /* Por encima de otros elementos */
+    transition: all 0.3s ease;
+}
+.whatsapp-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+/* Estilo para el ícono dentro del HTML
+ * Le da el color y el tamaño al ícono.
+ */
+.whatsapp-icon {
+    font-size: 2rem;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .whatsapp-button {
+        bottom: 2.5rem;
+        right: 2.5rem;
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    .whatsapp-icon {
+        font-size: 2.25rem;
+    }
+}

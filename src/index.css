@@ -1,0 +1,67 @@
+:root {
+  --golden: #d4b753;
+  --primary: #09090b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-golden {
+  background-color: var(--golden);
+  color: var(--primary);
+}
+
+.text-golden {
+  color: var(--golden);
+}
+
+.section-padding {
+  padding: 4rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .grid-item-md {
+    /* (100% - 2 * gap) / 3 */
+    width: calc((100% - 3rem) / 3);
+  }
+}
+/* 2. FIX para pantallas Pequeñas (sm:grid-cols-2) */
+@media (min-width: 640px) and (max-width: 767px) {
+  .grid-item-sm {
+    /* (100% - 1 * gap) / 2 */
+    width: calc((100% - 1.5rem) / 2);
+  }
+}
+/* 3. FIX para pantallas Móviles (grid-cols-1) */
+@media (max-width: 639px) {
+  .grid-item-xs {
+    /* 100% - 0 * gap */
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}
